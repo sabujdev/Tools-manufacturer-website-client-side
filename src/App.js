@@ -1,9 +1,11 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import Blogs from "./Pages/Blogs/Blogs";
 import Home from "./Pages/Home/Home";
-import Purchase from "./Pages/Purchase/Purchase";
+import Blog from "./Pages/Shared/Blog";
 import Navbar from "./Pages/Shared/Navbar";
+
+
+
 
 function App() {
   return (
@@ -11,8 +13,8 @@ function App() {
       <Navbar></Navbar>
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
-        <Route path="/purchase" element={<Purchase></Purchase>}></Route>
-        <Route path="/blog" element={<Blogs></Blogs>}></Route>
+        <Route path="/blog" element={<Blog></Blog>}></Route>
+        Route>
       </Routes>
     </div>
   );

@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Footer = () => {
+const NotFound = () => {
     return (
         <div>
-            
+            404 page not found
         </div>
     );
 };
 
-export default Footer;
+export default NotFound;
