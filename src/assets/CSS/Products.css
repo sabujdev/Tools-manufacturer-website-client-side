@@ -1,0 +1,18 @@
+.img-info {
+  position: relative;
+  border: 1px solid #999;
+  padding: 20px;
+}
+.products button {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+.products-info {
+  margin: 10px 0;
+}
+.products-info h2 {
+  font-weight: 600;
+  color: #1a1a1a;
+  font-size: 16px;
+}
