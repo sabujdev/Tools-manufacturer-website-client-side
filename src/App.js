@@ -1,8 +1,16 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import AddProduct from "./components/DashBoard/AddProduct";
+import MakeAdmin from "./components/DashBoard/MakeAdmin";
+import ManageOrders from "./components/DashBoard/ManageOrders";
+import ManageProducts from "./components/DashBoard/ManageProducts";
 import MyOrders from "./components/DashBoard/MyOrders";
+import MyProfile from "./components/DashBoard/MyProfile";
+import OrderSuccess from "./components/Payment/OrderSuccess";
+import Payment from "./components/Payment/Payment";
+
 import AllProducts from "./Pages/AllProducts/AllProducts";
+import Dashboard from "./Pages/Dashboard/DashBoard";
 
 import Home from "./Pages/Home/Home";
 import Productdetails from "./Pages/Home/ProductDetails";
@@ -31,8 +39,16 @@ function App() {
         <Route path="/myOrders" element={<MyOrders></MyOrders>}></Route>
         <Route path="/addProduct" element={<AddProduct></AddProduct>}></Route>
       <Route path="/productDetails/:id" element={<RequireAuth><Productdetails></Productdetails></RequireAuth>}></Route>
+      <Route path="/dashboard" element={<RequireAuth><Dashboard></Dashboard></RequireAuth>}></Route>
+      <Route path="/dashboard/myProfile" element={<RequireAuth><MyProfile></MyProfile></RequireAuth>}></Route>
+      <Route path="/dashboard/myOrders" element={<RequireAuth><MyOrders></MyOrders></RequireAuth>}></Route>
+      <Route path="/dashboard/manageOrders" element={<RequireAuth><ManageOrders></ManageOrders></RequireAuth>}></Route>
+      <Route path="/dashboard/manageProducts" element={<RequireAuth><ManageProducts></ManageProducts></RequireAuth>}></Route>
+      <Route path="/dashboard/addProduct" element={<RequireAuth><AddProduct></AddProduct></RequireAuth>}></Route>
+      <Route path="/dashboard/makeAdmin" element={<RequireAuth><MakeAdmin></MakeAdmin></RequireAuth>}></Route>
 
-
+      <Route path="/payMent/:id" element={<Payment></Payment>}></Route>
+      <Route path="/orderSuccess" element={<OrderSuccess></OrderSuccess>}></Route>
 
 
         <Route path="*" element={<NotFound></NotFound>}></Route>

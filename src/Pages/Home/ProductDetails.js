@@ -1,17 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import { useForm } from "react-hook-form";
 import { useNavigate, useParams } from 'react-router-dom';
-// import useAuth from '../../hooks/useAuth';
+
 
 
 const Productdetails = () => {
     const [product, setProduct] = useState({})
-    // const { user } = useAuth()
     const { id } = useParams();
     const navigate = useNavigate()
 
     console.log(id)
-    // const history = useHistory()
     const { register, handleSubmit, reset, formState: { errors } } = useForm();
 
     useEffect(() => {
