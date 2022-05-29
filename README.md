@@ -1,3 +1,38 @@
+# Tools menufacturer
+
+## [Private Repo Clint-site Link](https://github.com/programming-hero-web-course1/manufacturer-website-client-side-SabujMahonto
+
+)
+
+Click here to create private Clint-site repo: [https://github.com/programming-hero-web-course1/manufacturer-website-client-side-SabujMahonto
+](https://github.com/programming-hero-web-course1/manufacturer-website-client-side-SabujMahonto)
+
+## [Private Repo Server-site Link](https://github.com/ProgrammingHeroWC4/warehouse-management-server-side-SabujMahonto
+
+)
+
+Click here to create private server site repo: [https://github.com/ProgrammingHeroWC4/warehouse-management-server-side-SabujMahonto
+](https://github.com/ProgrammingHeroWC4/warehouse-management-server-side-SabujMahonto)
+
+live website link : (https://scintillating-banoffee-d13d5b.netlify.app/)
+
+## Project Description
+
+**Front-End**
+->React.js,
+->React router,
+->Firebase Authentication,
+->React firebase hook
+->Firebase Deploy,
+->Netlify,
+
+->Heroku
+->CSS-Framework
+->Tailwind css
+->DaisyUi
+->Row CSS.
+->react-stripe-js,
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
