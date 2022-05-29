@@ -12,7 +12,8 @@ const Products = () => {
         .then(data=>setProducts(data))
     },[])
     return (
-        <div>
+        <div className='mt-32'>
+            <h1 className='d-flex text-center text-4xl'>Our Tools </h1>
             <div className='px-20 pt-20 pb-6 grid lg:grid-cols-3 grid-cols-1 gap-10'>
                 {
                     products.slice(0,9).map(product=> <Product

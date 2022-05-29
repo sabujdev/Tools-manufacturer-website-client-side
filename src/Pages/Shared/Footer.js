@@ -3,7 +3,7 @@ import { FaFacebookF, FaInstagram, FaLinkedin, FaTwitter, FaYoutube } from "reac
 
 const Footer = () => {
     return (
-        <div>
+        <div className='mt-32'>
         
             <footer className="footer flex justify-between p-10 bg-base-200 text-base-content">
                 <div>
