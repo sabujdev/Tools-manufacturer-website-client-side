@@ -23,7 +23,7 @@ const Products = () => {
                 }
             </div>
             <div className='text-center px-20'>
-                <Link to={'/allProducts'}><button className='btn btn-primary px-10 text-black'>All Products <FaArrowRight className='text-black ml-3'/></button></Link>
+                <Link to={'/allProducts'}><button className='btn btn-primary px-10 text-black'>All Tools <FaArrowRight className='text-black ml-3'/></button></Link>
             </div>
         </div>
     );

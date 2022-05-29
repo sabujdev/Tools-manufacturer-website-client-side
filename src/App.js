@@ -22,6 +22,7 @@ import Blog from "./Pages/Shared/Blog";
 import Footer from "./Pages/Shared/Footer";
 import Navbar from "./Pages/Shared/Navbar";
 import NotFound from "./Pages/Shared/NotFound";
+import Protfolio from "./Pages/Shared/Protfolio";
 
 
 
@@ -33,6 +34,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/blog" element={<Blog></Blog>}></Route>
+        <Route path="/portfolio" element={<Protfolio></Protfolio>}></Route>
         <Route path="/login" element={<Login></Login>}></Route>
         <Route path="/signup" element={<SignUp></SignUp>}></Route>
         <Route path="/allProducts" element={<AllProducts></AllProducts>}></Route>

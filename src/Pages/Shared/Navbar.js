@@ -14,9 +14,8 @@ const Navbar = () => {
     const menuItem = <>
     <li><Link to="/">Home</Link></li>
     <li><Link to="/allProducts">Product</Link></li>
-    <li><Link to="/review">Portfolio</Link></li>
+    <li><Link to="/portfolio">Portfolio</Link></li>
     <li><Link to="/blog">Blog</Link></li>
-    <li><Link to="/about">About</Link></li> 
     {user && <li><Link to="/dashboard/myProfile">Dashboard</Link></li> }
      {
                     user?.displayName ? <div className='user-area' style={{display:'inline-block'}}>
