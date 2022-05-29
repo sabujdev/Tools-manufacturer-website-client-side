@@ -1,0 +1,50 @@
+[debug] [2022-05-29T11:59:20.601Z] ----------------------------------------------------------------------
+[debug] [2022-05-29T11:59:20.604Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Sabuj\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-05-29T11:59:20.605Z] CLI Version:   11.0.1
+[debug] [2022-05-29T11:59:20.605Z] Platform:      win32
+[debug] [2022-05-29T11:59:20.605Z] Node Version:  v16.14.2
+[debug] [2022-05-29T11:59:20.622Z] Time:          Sun May 29 2022 17:59:20 GMT+0600 (Bangladesh Standard Time)
+[debug] [2022-05-29T11:59:20.623Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-05-29T11:59:20.733Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-05-29T11:59:20.733Z] > authorizing via signed-in user (sabujnonstop@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  E:\Asignment-all\Assignment-12\manufacturer-website-client-side
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-05-29T11:59:28.140Z] Using project from CLI flag: manufacturer-website-e4c12
+[debug] [2022-05-29T11:59:28.149Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/manufacturer-website-e4c12 [none]
+[debug] [2022-05-29T11:59:28.961Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/manufacturer-website-e4c12 200
+[debug] [2022-05-29T11:59:28.961Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/manufacturer-website-e4c12 {"projectId":"manufacturer-website-e4c12","projectNumber":"66267841046","displayName":"manufacturer-website","name":"projects/manufacturer-website-e4c12","resources":{"hostingSite":"manufacturer-website-e4c12"},"state":"ACTIVE"}
+[info] i  Using project manufacturer-website-e4c12 (manufacturer-website) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2022-05-29T14:25:43.750Z] Error: kill ENOSYS
+    at process.kill (node:internal/process/per_thread:220:13)
+    at process.listener (C:\Users\Sabuj\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\signal-exit\index.js:95:15)
+    at process.emit (node:events:526:28)
+[error] 
+[error] Error: An unexpected error has occurred.
