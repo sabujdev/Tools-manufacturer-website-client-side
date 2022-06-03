@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const WeAreLookingFor = () => {
   return (
-    <div className="mb-10 lg:mx-10 bg-base-100 shadow-xl rounded-xl">
+    <div className="mt-20 lg:mx-10 bg-base-100 shadow-xl rounded-xl">
       <div class="hero h-screen lg:h-[60vh] ">
         <div class="hero-content flex-col lg:flex-row-reverse">
           <img

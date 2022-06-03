@@ -6,7 +6,7 @@ const UserRow = ({ user, refetch }) => {
 
   const makeAdmin = () => {
     console.log(localStorage.getItem("accessToken"))
-    fetch(`http://localhost:5000/users/admin/${email}`, {
+    fetch(`https://manufacturer-website-app.herokuapp.com/users/admin/${email}`, {
       method: "PUT",
       headers: {
         authorization: `Bearer ${localStorage.getItem("accessToken")}`,

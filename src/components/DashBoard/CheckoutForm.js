@@ -74,7 +74,7 @@ const CheckoutForm = ({ order }) => {
         transactionId: paymentIntent.id
       };
 
-      fetch(`http://localhost:5000/payment/${_id}`, {
+      fetch(`https://manufacturer-website-app.herokuapp.com/payment/${_id}`, {
         method: "PATCH",
         headers: {
           "content-type": "application/json",

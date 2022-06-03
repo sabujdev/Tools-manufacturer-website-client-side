@@ -17,7 +17,7 @@ const AddAReview = () => {
         };
       // console.log(reviews);    
       
-      fetch('http://localhost:5000/rating',{
+      fetch('https://manufacturer-website-app.herokuapp.com/rating',{
         method: 'POST',
         headers: {
           'content-type': 'application/json',

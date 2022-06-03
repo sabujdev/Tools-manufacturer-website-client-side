@@ -5,7 +5,7 @@ import Loading from "../Loading/Loading";
 const HomeTools = () => {
   const [tools, setTools] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/products")
+    fetch("https://manufacturer-website-app.herokuapp.com/products")
       .then((res) => res.json())
       .then((data) => setTools(data));
   },[]);

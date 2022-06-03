@@ -15,6 +15,7 @@ import Users from "./Components/DashBoard/Users";
 import Home from "./Components/Home/Home";
 import NotFound from "./Components/NotFound/NotFound";
 import OrderPage from "./Components/OrderPage/OrderPage";
+import Portfolio from "./Components/Portfolio/Portfolio";
 import RequireAdmin from "./Components/RequireAuth/RequireAdmin";
 import RequireAuth from "./Components/RequireAuth/RequireAuth";
 import Nav from "./Components/Shared/Nav";
@@ -38,7 +39,7 @@ function App() {
           <Route path="/signIn" element={<SignIn />} />
           <Route path="/signup" element={<SignUp />} />
           <Route path="/blogs" element={<Blogs />} />
-          {/* <Route path="/portfolio" element={<Portfolio />} /> */}
+          <Route path="/portfolio" element={<Portfolio></Portfolio>} />
           <Route path="/dashboard" element={<Dashboard />}>
             <Route index element={<MyProfile />} />
             <Route path='orders' element={<MyOrders />} />

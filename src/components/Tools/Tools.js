@@ -7,7 +7,7 @@ const Tools = () => {
     const [parts, setParts] = useState([]);
     const [partsInfo, setPartsInfo] = useState(null);
     useEffect(() => {
-        fetch('http://localhost:5000/products')
+        fetch('https://manufacturer-website-app.herokuapp.com/products')
             .then(res => res.json())
             .then(data => setParts(data));
     })

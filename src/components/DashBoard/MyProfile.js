@@ -15,7 +15,7 @@ const MyProfile = () => {
   }
   if (user) {
     const email = user.email;
-    fetch(`http://localhost:5000/users/${email}`)
+    fetch(`https://manufacturer-website-app.herokuapp.com/users/${email}`)
       .then((res) => res.json())
       .then((data) => setProfile(data));
   }
@@ -27,7 +27,7 @@ const MyProfile = () => {
     const location = e.target.location.value;
     const updatedProfile = { name, education, location };
 
-    fetch(`http://localhost:5000/users/${email}`, {
+    fetch(`https://manufacturer-website-app.herokuapp.com/users/${email}`, {
       method: "PUT",
       headers: {
         "content-type": "application/json",

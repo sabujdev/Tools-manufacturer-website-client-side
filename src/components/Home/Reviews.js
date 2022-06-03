@@ -4,7 +4,7 @@ import Loading from "../Loading/Loading";
 
 const Reviews = () => {
   const { data: review, isLoading } = useQuery("review", () =>
-    fetch("https://sazzad795.herokuapp.com/review", {
+    fetch("https://manufacturer-website-app.herokuapp.com/rating", {
       headers: {
         authorization: `Bearer ${localStorage.getItem("accessToken")}`,
       },
