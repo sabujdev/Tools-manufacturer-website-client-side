@@ -1,110 +1,86 @@
-import React, { useEffect, useState } from 'react';
-import { useAuthState } from 'react-firebase-hooks/auth';
-import auth from '../../firebase.init';
+import React, { useEffect, useState } from "react";
+import { useAuthState } from "react-firebase-hooks/auth";
+import { Link } from "react-router-dom";
+import { toast } from "react-toastify";
+import { auth } from "../../Firebase/Firebase.init";
+import Loading from "../Loading/Loading";
 
 const MyOrders = () => {
-    const [products, setProducts] = useState([])
-    const [isDelete, setIsDelete] = useState(null)
-    const [user]= useAuthState(auth);
-
-    useEffect(() => {
-        fetch(`https://manufacturer-website-app.herokuapp.com/orders?email=${user.email}`)
-            .then(res => res.json())
-            .then(data => setProducts(data))
-    }, [user.email])
-    console.log(products)
-    // delete order
-    const handleDeleteOrder = (id) => {
-        const confirmation = window.confirm('Are you sure you want to cancel your order?')
-        if (confirmation) {
-            fetch(`https://manufacturer-website-app.herokuapp.com/delete-order/${id}`, {
-                method: 'DELETE',
-                headers: { 'content-type': 'application/json' }
-            }).then(res => res.json())
-                .then(data => {
-                    if (data.deletedCount) {
-                        setIsDelete(true)
-                        alert('Deleted Successfully.')
-                        window.location.reload()
-                    } else {
-                        setIsDelete(false)
-                    }
-                })
-        }
+  const [orders, setOrders] = useState([]);
+  const [user, loading] = useAuthState(auth);
+ 
+  useEffect(() => {
+    if (user) {
+      fetch(`http://localhost:5000/order?buyer=${user?.email}`)
+        .then((res) => res.json())
+        .then((data) => setOrders(data));
     }
-    return (
-        <div className="container mx-auto py-10">
-            <div className="flex flex-col">
-                <div className="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
-                    <div className="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
-                        <div className="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg">
-                            <table className="min-w-full divide-y divide-gray-200">
-                                <thead className="bg-gray-50">
-                                    <tr>
-                                        <th
-                                            scope="col"
-                                            className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                                        >
-                                            Product Name
-                                        </th>
-                                        <th
-                                            scope="col"
-                                            className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                                        >
-                                            Order Id
-                                        </th>
-                                        <th
-                                            scope="col"
-                                            className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                                        >
-                                            Address
-                                        </th>
-                                        <th
-                                            scope="col"
-                                            className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                                        >
-                                            Status
-                                        </th>
-                                        <th
-                                            scope="col"
-                                            className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                                        >
-                                            Action
-                                        </th>
-                                    </tr>
-                                </thead>
-                                <tbody className="bg-white divide-y divide-gray-200">
-                                    {products.map((product) => (
-                                        <tr key={product._id}>
-                                            <td className="px-6 py-4 whitespace-nowrap">
-                                                <div className="ml-4">
-                                                    <div className="text-sm font-medium text-gray-900 capitalize">{product.name}</div>
-                                                </div>
-                                            </td>
-                                            <td className="px-6 py-4 whitespace-nowrap">
-                                                <div className="text-sm text-gray-900">{product._id}</div>
-                                            </td>
-                                            <td className="px-6 py-4 whitespace-nowrap">
-                                                <div className="text-sm text-gray-900">{product.address}</div>
-                                            </td>
-                                            <td className="px-6 py-4 whitespace-nowrap">
-                                                <span className="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
-                                                    {product.status}
-                                                </span>
-                                            </td>
-                                            <td>
-                                                <button onClick={() => handleDeleteOrder(product._id)} className='hover:text-red-400 font-semibold text-center'>Cancel</button>
-                                            </td>
-                                        </tr>
-                                    ))}
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    );
+  }, [user]);
+
+  if (loading) {
+    return <Loading />;
+  }
+  const handleDelete = (id) => {
+    if (user) {
+      fetch(`http://localhost:5000/delete-order/${id}`, {
+        method: 'DELETE'
+      })
+        .then(res => res.json())
+        .then(data => {
+          if (data.acknowledged) {
+            toast.error('Delete successfully')
+          }
+        });
+
+    }
+  }
+  return (
+    <div>
+      <p className="text-lg">Your Orders: {orders?.length}</p>
+      <div className="overflow-x-auto">
+        <table className="table w-full">
+          <thead>
+            <tr>
+              <th className="text-primary"></th>
+              <th className="text-primary">Name</th>
+              <th className="text-primary">Parts</th>
+              <th className="text-primary">price</th>
+              <th className="text-primary">Pcs</th>
+              <th className="text-primary">Cancel</th>
+              <th className="text-primary">Paymant</th>
+            </tr>
+          </thead>
+          <tbody>
+            {orders?.map((order, i) => (
+              <tr key={i}>
+                <td className="text-primary"></td>
+                <td className="text-primary">{order.buyerMail}</td>
+                <td className="text-primary">{order.part}</td>
+                <td className="text-primary">{order.pPrice}</td>
+                <td className="text-primary">{order.orderPcs}</td>
+                <td className="text-primary">
+                  {order.pPrice && !order.paid && (
+                    <button onClick={() =>handleDelete(order._id)} className="btn btn-sm btn-error">Cancel</button>
+                  )}
+                </td>
+                <td className="text-primary">
+                  {order.pPrice && !order.paid && (
+                    <Link to={`/dashboard/payment/${order._id}`} className="btn btn-sm btn-success">Pay Now</Link>
+                  )}
+                  {order.pPrice && order.paid && (
+                    <span className="text-success">Paid</span>
+                  )}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  );
 };
 
 export default MyOrders;
+
+
+
