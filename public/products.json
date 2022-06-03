@@ -4,6 +4,7 @@
     "price": "300",
     "quantity": "500",
     "minimumQuantity": "110",
+    "available": "200",
     "img": "https://i.ibb.co/R9nDGYz/tool-1.jpg",
     "description": "Take on a variety of fastening projects using the 20V MAX* 3/8 in. Cordless Impact Wrench with Hog Ring Anvil Kit. The high-output Impact Wrench delivers the power needed for both large and small jobs with up to 250 ft-lbs of tightening torque and 400 ft-lbs of breakaway torque. Its compact, lightweight build was engineered for seamless maneuverability in tight spots. Dimly lit work conditions are no problem for this Cordless Impact Wrench, which features an on-board LED for visibility in dark spaces."
   },
@@ -12,6 +13,7 @@
     "price": "900",
     "quantity": "500",
     "minimumQuantity": "193",
+    "available": "203",
     "img": "https://i.ibb.co/YPTXMfP/tool-2.jpg",
     "description": "The DWE6421K 5 in. Single Speed Random Orbit Sander Kit with hook & loop pad has a 3 amp motor that delivers 12,000 OPM. The separate counterweight reduces vibration and along with the rubber overmold grip provides comfortable sanding. A shorter design allows users to get closer to the work surface and the one-handed locking dust bag attaches securely to the sander to aid in dust collection or the user can attach the sander directly to the DWV010 or DWV012 dust collectors."
   },
@@ -20,6 +22,7 @@
     "price": "333",
     "quantity": "500",
     "minimumQuantity": "130",
+    "available": "200",
     "img": "https://i.ibb.co/kyXdbzD/tool-3.jpg",
     "description": "The 60V MAX* Brushless Cut-Off Saw makes fast and efficient single pass cuts and scores in concrete, pavestones, steel, and rebar with the high-performance brushless motor that provides up to 6,600 RPM. The 9 in. blade allows for cuts up to 3-1/4 in. deep. A heavy load indicator light provides the user with power and runtime feedback during demanding applications. The rotatable 5-position guard allows selection of approach angle for optimal visibility and accessibility when cutting in tight spaces. The latched and sealed battery box provides additional protection from harsh jobsite conditions. In addition, this saw is OSHA Table 1 Compliant for dust management with the dual-sided water feed system. This tool comes Tag Ready™ so users and companies can attach the DEWALT Tag™ and track its location virtually anywhere via the DEWALT Tool Connect™ app."
   },
@@ -28,6 +31,7 @@
     "price": "230",
     "quantity": "500",
     "minimumQuantity": "110",
+    "available": "200",
     "img": "https://i.ibb.co/vHY3pYN/tool-4.jpg",
     "description": "The DEWALT DCN660 16 Gauge Angled Finish Nailer drives 16 Gauge angled finish nails from 1-1/4 to 2-1/2 which makes it ideal for fastening crown molding, casing, and baseboards. With its brushless motor powered by a DEWALT 20V MAX* Lithium-Ion battery the DCN660 is ready to go to work without the hassle of using gas, compressor, and hose. Tackle jobs both large and small with the features of a pneumatic tool and the freedom of cordless. * - Maximum initial battery voltage (measured without a workload) is 20 volts. Nominal voltage is 18."
   },
@@ -36,6 +40,7 @@
     "price": "340",
     "quantity": "500",
     "minimumQuantity": "150",
+    "available": "200",
     "img": "https://i.ibb.co/NCKgf3y/tool-5.jpg",
     "description": "The DCP580B features a brushless motor for maximum efficiency that helps to maintain speed under load. The brushless planer features a 3-1/4 in. width capacity and ability to adjust depth at 1/256 in. adjustments with a rebate capacity of 5/64 in. The planer weighs 6.8 lbs. and operates on the DEWALT 20V MAX* battery system. Lightweight and cordless, the planer can be easily transported around the jobsite without the hassle of a cord. Battery, charger and dust bag sold separately."
   },
@@ -44,6 +49,7 @@
     "price": "673",
     "quantity": "500",
     "minimumQuantity": "115",
+    "available": "205",
     "img": "https://i.ibb.co/DG9BDPq/tool-6.jpg",
     "description": "Tackle demanding jobs with this high-performance 60V MAX* 1-1/4 in. Brushless Cordless SDS PLUS Rotary Hammer. Capable of outputting up to 4.5 J of impact energy, this rotary hammer comes equipped with a DEWALT brushless motor and German-engineered mechanism for fast drilling and chipping in even the hardest concrete. The midweight design makes it ideal for structural connections, beam and column anchorage, rod hanging, seismic and safety attachments, cable tray and strut mounting, and steel stanchion mounting. Part of the PERFORM & PROTECT™ product line, this hammer is integrated with the Anti-Rotation E-CLUTCH® System and the SHOCKS Active Vibration Control® System. E-CLUTCH® shuts down the tool in bind up situations. SHOCKS® reduces vibration felt by the user at the handles, compared to rotary hammers without this feature. Link the DCH416 to the DCV585 60V MAX* dust extractor for remote extractor activation with WIRELESS TOOL CONTROL™. This tool is Tag-Ready with a designated area for DCE041 Tag palcement. The DCE041 Tag is designed to be tracked with the TOOL CONNECT™ System via the DEWALT Site Manager™ app. This rotary hammer becomes OSHA Table 1 Compliant when used with the DWH200D shroud and DCV585 dust extractor."
   },
@@ -52,6 +58,7 @@
     "price": "50",
     "quantity": "500",
     "minimumQuantity": "160",
+    "available": "200",
     "img": "https://i.ibb.co/VmD49hj/tool-7.jpg",
     "description": "The DWE46101 5/ 6 Cutting and Tuckpointing Dust Shroud Tool Kit has an 11 Amp motor designed for fast material removal. Universal Connector Eliminates the need for users to tape hose to shroudand. Includes dust collection and tool-free wheel removal."
   },
@@ -60,6 +67,7 @@
     "price": "400",
     "quantity": "500",
     "minimumQuantity": "267",
+    "available": "207",
     "img": "https://i.ibb.co/PN812nX/tool-8.jpg",
     "description": "The DEWALT 20V Cordless Dry Hand Vacuum (Tool only) is a jobsite cleaning solution that provides users with powerful performance (46 CFM) to pick up common jobsite debris ranging from drywall, dust, to small screws and nails. This versatile vacuum comes with 6 different cleaning attachment accessories to tackle any cleaning job from floor level to overhead. The hand vacuum can be used to handle smaller messes or used in combination with the extension tube and floor accessory to clean up floor areas. A bright LED light illuminates the darkest areas. A HEPA Filter allows for clean efficient cleanup of fine dust and drywall and follows OSHA Table 1 Compliance under houskeeping rules. It comes fully equipped with an extension tube, floor nozzle, flexible hose, crevice nozzle, gulper brush, round brush, belt hook, accessory holder, and HEPA filter.\n\nUp to 21.4 mintues of runtime per charge using DCB205 battery (sold separately).\n\nCan fill up to 15 tank fills per charge using DCB205 battery (sold separately)."
   },
@@ -68,6 +76,7 @@
     "price": "644",
     "quantity": "500",
     "minimumQuantity": "10",
+    "available": "20",
     "img": "https://i.ibb.co/rZZY5yL/tool-9.jpg",
     "description": "The D28605 5/16 Variable Speed Fiber Cement Siding Shear is ideal for cutting 5/16 cement fiber siding. 360-degree head swivel for added cutting convenience. Reversible dual cutting edge side blades prolong cutting life and increase productivity."
   }

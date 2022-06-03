@@ -220,3 +220,46 @@ Before we get started, keep in mind:
     "statusCode": 500
   }
 }
+[debug] [2022-06-03T10:32:51.461Z] ----------------------------------------------------------------------
+[debug] [2022-06-03T10:32:51.465Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Sabuj\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-06-03T10:32:51.466Z] CLI Version:   11.0.1
+[debug] [2022-06-03T10:32:51.466Z] Platform:      win32
+[debug] [2022-06-03T10:32:51.466Z] Node Version:  v16.14.2
+[debug] [2022-06-03T10:32:51.494Z] Time:          Fri Jun 03 2022 16:32:51 GMT+0600 (Bangladesh Standard Time)
+[debug] [2022-06-03T10:32:51.495Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-06-03T10:32:51.607Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-06-03T10:32:51.607Z] > authorizing via signed-in user (sabujnonstop@gmail.com)
+[debug] [2022-06-03T10:32:51.608Z] [iam] checking project manufacturer-website-e4c12 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-06-03T10:32:51.616Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/manufacturer-website-e4c12:testIamPermissions [none]
+[debug] [2022-06-03T10:32:51.617Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/manufacturer-website-e4c12:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-06-03T10:32:52.997Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/manufacturer-website-e4c12:testIamPermissions 200
+[debug] [2022-06-03T10:32:52.997Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/manufacturer-website-e4c12:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-06-03T10:32:53.000Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/manufacturer-website-e4c12 [none]
+[debug] [2022-06-03T10:32:53.572Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/manufacturer-website-e4c12 200
+[debug] [2022-06-03T10:32:53.572Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/manufacturer-website-e4c12 {"projectId":"manufacturer-website-e4c12","projectNumber":"66267841046","displayName":"manufacturer-website","name":"projects/manufacturer-website-e4c12","resources":{"hostingSite":"manufacturer-website-e4c12"},"state":"DELETED"}
+[info] 
+[info] === Deploying to 'manufacturer-website-e4c12'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-06-03T10:32:53.581Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/manufacturer-website-e4c12 [none]
+[debug] [2022-06-03T10:32:54.021Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/manufacturer-website-e4c12 200
+[debug] [2022-06-03T10:32:54.022Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/manufacturer-website-e4c12 {"projectId":"manufacturer-website-e4c12","projectNumber":"66267841046","displayName":"manufacturer-website","name":"projects/manufacturer-website-e4c12","resources":{"hostingSite":"manufacturer-website-e4c12"},"state":"DELETED"}
+[debug] [2022-06-03T10:32:54.034Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/66267841046/sites/manufacturer-website-e4c12/versions [none]
+[debug] [2022-06-03T10:32:54.034Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/66267841046/sites/manufacturer-website-e4c12/versions {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-06-03T10:32:55.746Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/66267841046/sites/manufacturer-website-e4c12/versions 500
+[debug] [2022-06-03T10:32:55.746Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/66267841046/sites/manufacturer-website-e4c12/versions {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
+[error] 
+[error] Error: HTTP Error: 500, Internal error encountered.
+[debug] [2022-06-03T10:32:55.994Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500
+  }
+}
